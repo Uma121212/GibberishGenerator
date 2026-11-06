@@ -1,0 +1,71 @@
+#input-field {
+    width: 50%;
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    border-width:5px;
+    border-color:darkgreen;
+    box-shadow: 0px 4px 10px black;
+}
+
+#input-field:focus {
+    outline: none;
+}
+
+#output-field {
+    width: 50%;
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    border-width:5px;
+    border-color:darkgreen;
+    box-shadow: 0px 4px 10px black;
+    margin-top:20px;
+}
+
+#output-field:focus {
+    outline: none;
+}
+
+#gui {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#gibberize {
+    margin-top: 30px;
+    border-color: darkgreen;
+    border-radius: 5px;
+    border-width:4px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: bold;
+    width: 15%;
+    height: 50px;
+    box-shadow: 0px 4px 10px black;
+}
+
+body {
+    background-color: rgb(136, 182, 228);
+}
+
+#site-title, #instructions {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#dropdowns {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+select {
+    width: 100px;
+    box-shadow: 0px 0px 4px black;
+}
