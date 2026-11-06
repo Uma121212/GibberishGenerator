@@ -43,10 +43,11 @@ const outputSizeSelect = document.getElementById("output-size");
 //Values from the input size dropdown
 const inputSizeValues = new Map();
 inputSizeValues.set("short",3)
-inputSizeValues.set("small",7)
-inputSizeValues.set("medium",10)
-inputSizeValues.set("large",15)
-inputSizeValues.set("long",28)
+inputSizeValues.set("small",5)
+inputSizeValues.set("medium",8)
+inputSizeValues.set("large",12)
+inputSizeValues.set("long",24)
+inputSizeValues.set("longer",36)
 
 //function called when the button is pressed
 function gibberizeinput() {
@@ -56,8 +57,8 @@ function gibberizeinput() {
     }
 
     let txt = field.value;
-    let result = chop(txt,parseInt(complexitySelect.value),inputSizeValues.get(outputSizeSelect.value) * (6 - parseInt(complexitySelect.value)))
-    outputField.value = chop(txt,parseInt(complexitySelect.value),inputSizeValues.get(outputSizeSelect.value) * (6 - parseInt(complexitySelect.value)));
+    let result = chop(txt,parseInt(complexitySelect.value),inputSizeValues.get(outputSizeSelect.value) * (7 - parseInt(complexitySelect.value)))
+    outputField.value = result
 }
 
 //gibbering goober bunch
